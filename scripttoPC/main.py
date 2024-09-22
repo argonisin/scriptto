@@ -8,8 +8,8 @@ class user:
         print("[SCRIPTTO-SIGN_UP_MENU]\n")
         print("Welcome to the sign-up page!,\nLet's have our humble beginnings with you.\n\n")
         
-        gps = time.localtime()
-        date = time.strftime("%D", gps)
+        local = time.localtime()
+        date = time.strftime("%D", local)
         json_metaData_format = {
             "isNew": "yes",
             "user-meta-data": [
@@ -51,7 +51,8 @@ class user:
                 print("Enter your details on the log-in panel [wait for 2.4s]")
                 time.sleep(2.4)
                 os.system('cls')
-                return user_panel()
+                break
+        return user_panel()
             
                 
     def log_in():
@@ -76,8 +77,7 @@ class user:
                                 print("Loading script(to).game :)")
                                 time.sleep(3)
                                 os.system('cls')
-                                return menu.start_menu()
-                                
+                                break
                             else:
                                 print("[Invalid password!]")
                     else:
@@ -91,6 +91,8 @@ class user:
                 time.sleep(0.67)
                 os.system('cls')
                 return log_in()
+            return menu.start_menu()
+                                
             
         print("[SCRIPTTO-LOG_IN_MENU]\n")
         print("Welcome to the log-in page!,\nPlease enter the correct details.")
@@ -102,7 +104,9 @@ class user:
             if userName == ';':
                 time.sleep(0.67)
                 os.system('cls')
-                return user_panel()
+                user_panel()
+                break
+            
             if userName:
                 userJsonCheck(userName)
                 break
@@ -130,10 +134,10 @@ def user_panel():
             return user.sign_up()
             
         if user_cli == 'qt':
-            print("See ya later!_scriptto has stopped")
+            print("[See ya later! scriptto has stopped]")
             break
         else:
-            print("\n[Invalid Argument]")
+            print("[Invalid Argument]\n")
             time.sleep(0.43)
             os.system('cls')
             return user_panel()
