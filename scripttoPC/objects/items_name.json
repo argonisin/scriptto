@@ -1,0 +1,17 @@
+{
+	"": [
+		{
+			"wooden": [
+				{
+					"adventure's stick": [
+						{
+                           "damage":[1,7],
+                           "item_health":15,
+                           "level":1
+						}
+					]
+				}
+			]
+		}
+	]
+}
