@@ -1,0 +1,19 @@
+{
+    "isNew": "yes",
+    "user-meta-data": [
+        {
+            "user_name": "test",
+            "password": "1234",
+            "bio": null,
+            "joined_date": "09/22/24"
+        }
+    ],
+    "user-profile": [
+        {
+            "rank": "bronze",
+            "elo": 1000,
+            "level": 0,
+            "xp": 0
+        }
+    ]
+}
