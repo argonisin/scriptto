@@ -94,7 +94,7 @@ class user:
             return menu.start_menu()
                                 
             
-        print("[SCRIPTTO-LOG_IN_MENU]\n")
+        print(f"[SCRIPTTO-LOG_IN_MENU]\n")
         print("Welcome to the log-in page!,\nPlease enter the correct details.")
         print("To exit type [;]\n\n")
         
@@ -120,7 +120,7 @@ def user_panel():
                'qt':"quit"}
     
     for cmd, opts in options.items():
-        print(f"{cmd}:{opts}")
+        print(f"${cmd}:{opts}")
     print()
     
     while True:

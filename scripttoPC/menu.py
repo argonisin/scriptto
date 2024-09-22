@@ -12,7 +12,7 @@ class panels:
         for profileData in profile["user-profile"]:
             profileData = profileData
             
-        print(f"[WELCOME TO YOUR PROFILE! {metaData["user_name"]}]")
+        print(f"[WELCOME TO YOUR PROFILE! {metaData['user_name']}]")
         print(f"""
             Username: {metaData["user_name"]} 
             Level:   [{profileData["level"]}]
